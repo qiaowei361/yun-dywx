@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面跳转中</title>
+    <script>
+        function redirectToNewURL() {
+            // 获取当前URL的路径部分
+            var currentPath = window.location.pathname;
+            // 构建新的URL
+            var newURL = 'https://wx.dyedu.net' + currentPath;
+            // 跳转到新的URL
+            window.location.href = newURL;
+        }
+    </script>
+</head>
+<body onload="redirectToNewURL();">
+    <h1>页面跳转中</h1>
+    <p>这个页面将在加载时自动跳转到新的URL。</p>
+</body>
+</html>
